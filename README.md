@@ -15,8 +15,6 @@ Welcome to **Pixel Art Garden**! This is a creative, interactive web-based garde
 - **Backend (if applicable):** Node.js, Express (optional for saving user gardens)
 - **Libraries:** No external dependencies 
 
-## 📸 Screenshots
-![Pixel Art Garden](Screenshot%202025-03-19%20205823.png)
 
 ## 🛠️ Installation
 Follow these steps to set up the project locally:
