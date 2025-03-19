@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 20px;
+    transition: background-color 2s;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #3a7d44;
+    text-shadow: 2px 2px 0px #fff;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.button-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 8px 15px;
+    border: 3px solid #000;
+    background-color: #fff;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 3px 3px 0px #000;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 5px 0px #000;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 0px #000;
+}
+
+.item-btn.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+#garden-canvas {
+    border: 4px solid #000;
+    background-color: #7ec850;
+    display: block;
+    margin: 0 auto;
+    cursor: crosshair;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 2s;
+}
+
+.instructions {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed #666;
+    display: inline-block;
+}
+
+/* Night mode styles */
+body.night-mode {
+    background-color: #1a1a2e;
+    color: #eee;
+}
+
+body.night-mode h1 {
+    color: #64a964;
+    text-shadow: 2px 2px 0px #000;
+}
+
+body.night-mode #garden-canvas {
+    background-color: #1e4620;
+}
+
+body.night-mode .instructions {
+    border-color: #999;
+}

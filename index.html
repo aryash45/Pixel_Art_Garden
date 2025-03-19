@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Garden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pixel Art Garden</h1>
+        
+        <div class="controls">
+            <div class="button-group">
+                <button id="tree-btn" class="item-btn active">🌲 Tree</button>
+                <button id="flower-btn" class="item-btn">🌷 Flower</button>
+                <button id="pond-btn" class="item-btn">💧 Pond</button>
+                <button id="rock-btn" class="item-btn">🪨 Rock</button>
+            </div>
+            <div class="button-group">
+                <button id="clear-btn">🗑️ Clear Garden</button>
+                <button id="time-btn">🌙 Toggle Day/Night</button>
+            </div>
+        </div>
+        
+        <canvas id="garden-canvas"></canvas>
+        
+        <div class="instructions">
+            <p>Click and drag to place items in your garden. Change time of day to see different lighting!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
